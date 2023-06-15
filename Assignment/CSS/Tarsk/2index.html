@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Layout 2nd (Flex Items)</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <style>
+        section {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 400px;
+            width: 1300px;
+            border: 3px solid black;
+            display: flex;
+
+            /*Manage content according to y-axis (cross-axis) */
+            align-items: center;
+            /*flex-start | flex-end  | center */
+
+            /*Manage content according to x-axis  (main-axis)*/
+            /*justify-content: space-around;*/
+            /*flex-start | flex-end | center*/
+            /*space-evenly (equal spaces)|
+             space-around (place spaces around left and right flex items and then the rest of space between the center element) |
+             space-between (remove the left and right flex items spaces and put all spaces between the center flex elements)*/
+
+            /*flex-wrap: nowrap;*/
+            /*default flex-wrap is off, so if the shrink factor is off then all the flex items will overflow from the container, to manage that from the container level we can use this property*/
+
+            flex-wrap: nowrap;
+            /*if the flex items overflow then we can manage them inside the flex container;*/
+
+
+            /*column | row(default) | column-reverse - row-reverse*/
+            flex-direction: column; /*you can change the direction of the flex-items*/
+        }
+
+        /*flex items management*/
+        section > div {
+            border: 1px solid red;
+            height: 100px;
+            width: 1300px;/* flex-basis */
+            flex-shrink: 1; /* flex-basis default 1 */
+            /*By default flex-shrink factor is on (1) because of that flex items will not overflow its container width
+            if you wanted to overflow you have to turn off the shrink factor*/
+            /*flex-basis: 100%;   !*width of a flex item*!*/
+        }
+        section>div:nth-child(1){
+            /*flex-grow: 1;*/   /*unit less proportion value*/
+            background: green;
+            /*align-self: flex-start;*/
+        }
+        section>div:nth-child(2){
+            /*flex-grow: 2;*/
+            background: blue;
+            /*align-self: center;*/
+        }
+        section>div:nth-child(3){
+            /*flex-grow: 1;*/
+            background: red;
+            /*align-self: flex-end;*/
+        }
+
+    /*    Flex container-properties*/
+    /*    display: flex;*/
+    /*    justify-content*/
+    /*    flex-wrap*/
+    /*    align-items*/
+    /*    flex-direction: row-reverse;*/
+
+
+        /*-----------------------*/
+
+
+    /*   Flex items properties */
+    /* flex-grow - unit-less proportion value*/
+    /* flex-shrink - shrink factor*/
+    /*flex-basis -  the width of a flex-item*/
+    /*align-self: flex-end*/
+    </style>
+</head>
+<body>
+<section><!--flex container -->
+  <div>A</div><!-- Flex-items-->
+  <div>B</div> <!-- Flex-items-->
+  <div>C</div><!-- Flex-items-->
+</section>
+
+</body>
+</html>

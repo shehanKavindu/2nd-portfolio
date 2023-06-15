@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1 {
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            position: relative;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: -75px;
+            top: -75px;
+        }
+        
+        .c2 {
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            position: relative;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -75px;
+            margin: auto;
+        }
+        
+        .c3 {
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            position: relative;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            right: -75px;
+            top: -75px;
+        }
+        
+        .c4 {
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            position: relative;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: -75px;
+            bottom: -75px;
+        }
+        
+        .c5 {
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            position: relative;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -75px;
+            margin: auto;
+        }
+        
+        .c6 {
+            width: 150px;
+            height: 150px;
+            z-index: 4;
+            position: relative;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            right: -75px;
+            bottom: -75px;
+        }
+        
+        section {
+            width: 100vw;
+            height: 100vw;
+            height: 100vh;
+            background-color: white;
+            position: relative;
+        }
+        
+        .leftTopSection {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        }
+        
+        .rightTopSection {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            background-color: green;
+        }
+        
+        .leftBottomSection {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+        }
+        
+        .rightBottomSection {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            background-color: deeppink;
+        }
+        
+        .middleCircle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .middleSquare {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .topLeftCircle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .topLeftSquare {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .topRightCircle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .topRightSquare {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .bottomRightCircle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .bottomRightSquare {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .bottomLeftCircle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .bottomLeftSquare {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+<section>
+    <section class="leftTopSection">
+        <div class="topLeftCircle">
+            <div class="topLeftSquare"></div>
+        </div>
+    </section>
+    <section class="rightTopSection">
+        <div class="topRightCircle">
+            <div class="topRightSquare"></div>
+        </div>
+    </section>
+    <section class="leftBottomSection">
+        <div class="bottomRightCircle">
+            <div class="bottomRightSquare"></div>
+        </div>
+    </section>
+    <section class="rightBottomSection">
+        <div class="bottomLeftCircle">
+            <div class="bottomLeftSquare"></div>
+        </div>
+    </section>
+    <div class="middleSquare">
+        <div class="middleCircle"></div>
+    </div>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="c5"></div>
+    <div class="c6"></div>
+</section>
+<section>
+    <section class="leftTopSection">
+        <div class="topLeftCircle">
+            <div class="topLeftSquare"></div>
+        </div>
+    </section>
+    <section class="rightTopSection">
+        <div class="topRightCircle">
+            <div class="topRightSquare"></div>
+        </div>
+    </section>
+    <section class="leftBottomSection">
+        <div class="bottomRightCircle">
+            <div class="bottomRightSquare"></div>
+        </div>
+    </section>
+    <section class="rightBottomSection">
+        <div class="bottomLeftCircle">
+            <div class="bottomLeftSquare"></div>
+        </div>
+    </section>
+    <div class="middleSquare">
+        <div class="middleCircle"></div>
+    </div>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="c5"></div>
+    <div class="c6"></div>
+
+</section>
+</body>
+</html>

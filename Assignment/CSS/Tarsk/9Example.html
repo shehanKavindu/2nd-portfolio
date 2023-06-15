@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
+  <style>
+    section{
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      left: 0;
+      animation:testOne;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      /*animation-direction: reverse;*/
+    }
+
+    @keyframes testOne {
+      0%{
+        width: 100px;
+        height: 100px;
+        background: red;
+        /*left: 500px;
+        top: 0;*/
+
+      }
+      25%{
+        width: 100px;
+        height: 100px;
+        background: green;
+        border-radius: 100%;
+        top: 0px;
+        left: 500px;
+      }
+
+      50%{
+        width: 100px;
+        height: 100px;
+        background: blue;
+        border-radius: 100%;
+        left: 500px;
+        top: 500px;
+      }
+      75%{
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        border-radius: 100%;
+        top: 500px;
+        left: 0;
+      }
+
+      100%{
+        width: 100px;
+        height: 100px;
+        background: yellow;
+        border-radius: 100%;
+        left: 0px;
+        top: 0px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+<section>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

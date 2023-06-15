@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Frame Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../CSSFrameWork/POS/assest/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/fonts/css/all.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-dark">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-3" href="#">
+                    <img src="../POS/assest/img/POSImage.png" alt="logo" width="60" height="54" class="fs-3 me-2">
+                    POS System
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/orders.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/customers.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/item.html">Items</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container-md position-relative">
+    <div>
+        <div class="row ">
+            <div class="p-1 px-3 rounded-1 fw-bolder bg-dark text-light fs-3 mt-4 shadow-sm"><i class="fas fa-shopping-cart me-2"></i>
+                Order
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 col-sm-3 col-lg-2">
+            <select class="form-select form-select-ls mt-4" aria-label=".form-select-lg example">
+                <option value="1">ID</option>
+                <option value="2">Name</option>
+                <option value="3">Date</option>
+            </select>
+        </div>
+
+        <div class="col-8 col-sm-9 col-lg-10">
+            <form class="d-flex mt-4 mt-sm-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="p-3 rounded-3  bg-primary text-light fw-bolder mt-4">Order Details</div>
+
+
+    <div class="px-3 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm" >
+
+        <div class="col-">
+            <div class="row gx-3">
+                <div class="col-lg">
+                    <div class="mb-3">
+                        <label for="orderId" class="form-label">Order ID</label>
+                        <input type="text" class="form-control" id="orderId" placeholder="O00-01">
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="Date" class="form-control" id="date" placeholder="DD/MM/YYYY">
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="mb-3">
+                        <label for="cus_name" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="cus_name" placeholder="Kavindu">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row gx-3">
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="discount" class="form-label">Discount</label>
+                        <input type="text" class="form-control" id="discount" placeholder="00%" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="cost" class="form-label">Cost</label>
+                        <input type="text" class="form-control" id="cost" placeholder="0000.00%" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class=" gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4">
+                    <button type="button" class="btn btn-danger">Clear</button>
+                    <button type="button" class="btn btn-primary">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="row ">
+            <div class="p-1 px-3 col rounded-3 fw-bolder bg-dark text-light fs-3 mt-5 shadow-sm"><i class="fas fa-chart-line me-2"></i>
+                All Orders</div>
+        </div>
+    </div>
+    <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar " >
+        <table class="table table-hover table-borderless table-striped ">
+            <thead class="bg-primary text-light">
+            <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Discount</th>
+                <th scope="col">Cost(Rs)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">O001</th>
+                <td>17/05/2023</td>
+                <td>Shehan</td>
+                <td>10%</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <th scope="row">O002</th>
+                <td>17/05/2023</td>
+                <td>Sapna</td>
+                <td>20%</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <th scope="row">O003</th>
+
+                <td>17/05/2023</td>
+                <td>Janith</td>
+                <td>25%</td>
+                <td>4400</td>
+            </tr>
+            <tr>
+                <th scope="row">O004</th>
+                <td>17/05/2023</td>
+                <td>Kasuni</td>
+                <td>10%</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <th scope="row">O005</th>
+                <td>17/05/2023</td>
+                <td>Reshani</td>
+                <td>20%</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <th scope="row">0006</th>
+                <td>17/05/2023</td>
+                <td>Sarath</td>
+                <td>15%</td>
+                <td>8900</td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+</body>
+</html>
+

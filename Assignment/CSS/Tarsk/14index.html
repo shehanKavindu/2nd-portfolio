@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+  <style>
+        p::first-line{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<h1 id="h1ID">jQuery</h1>
+<h1>jQuery vs JS</h1>
+<h2>What is jQuery.?</h2>
+<p class="para">It's just a simple library which was built on the top of JS to
+  reduce the complexity of DOM manipulation part</p>
+<p>It's just a simple library which was built on the top of JS to
+  reduce the complexity of DOM manipulation part</p>
+<p class="para">It's just a simple library which was built on the top of JS to
+  reduce the complexity of DOM manipulation part</p>
+<p id="paraID">It's just a simple library which was built on the top of JS to
+  reduce the complexity of DOM manipulation part</p>
+<section id="sectionID">
+  <div>Inner Div</div>
+  <div>Inner Div</div>
+  <h1>Hello There</h1>
+  <div>Inner Div</div>
+</section>
+
+<ul id="ulID">
+  <li>Test 1</li>
+  <li>Test 2</li>
+</ul>
+
+
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script>
+    //select h1 and apply red color with JS
+    document.querySelector("h1").style.color = 'red';
+
+    //Doing the same with jQuery
+    $("h2").css('color','red');
+    // $("h2") this will select h2 element
+    //in the DOM. no need to think about document.methods
+    //again
+
+    //change default selector LKBOY();
+    // let LKBOY=jQuery.noConflict();
+    //by using this we can change the default selector
+    //to LKBOY("h1")
+
+
+    //So what are the other ways of selecting dom elements using jQuery
+    $("");
+
+   //what about css selectors? can we use them with jQuery $()
+    //css selectors
+        //01. ID selector //working
+        //02. Class //working
+        //03. Attribute selector //working
+        //04. Universal Selector //working
+        //05. Type selector //working
+        //06. Pseudo Class //several elements are working
+        //07. Pseudo Elements // not working
+        //08. Grouping Selectors //working
+        //09. CSS Combinators (all working)
+             //01: Child Combinator >
+             //02. Descendent Combinator  h1 h2
+             //03. Adjacent Siblings Combinator +
+             //04. General Siblings Combinator ~
+
+
+    //So, yeah all are working. so it is easy right.?
+
+    $("h1");// type selector
+    $("#ulID")//id selector
+    $(".para");//class selector
+    $("[id]"); //attribute selector
+    $("*"); //Universal selector
+    $("div:nth-child(1)");//pseudo class
+    $("p::first-line");//pseudo elements // so sad not working
+    $("p,h1");//grouping selectors
+    $("section div");//descendent combinator
+    $("section>div");//child combinator
+    $("h2+p");//Adjacent combinator
+    $("h2~p");//General siblings combinator
+
+    //all of the above are working fine except pseudo elements
+
+
+
+
+
+</script>
+</body>
+</html>

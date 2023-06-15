@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    section{
+      border: 2px solid black;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex: 0ch;
+    }
+    section>div{
+      border: 1px solid red;
+      width: 200px;
+      height: 200px;
+      flex: 0ch;
+    }
+    body>:nth-child(2)>div{
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 100%;
+        flex: 0ch;
+    }
+   section>:nth-child(1){
+      flex-grow: 1;
+   }
+
+section>:nth-child(1){
+  background: red;
+
+}
+ section>:nth-child(1){
+      flex-grow: 1;
+      }
+section>:nth-child(2){
+background: blue;
+}
+section>:nth-child(3){
+   flex-grow: 1;
+}
+section>:nth-child(2){
+background: green;
+
+  </style>
+</head>
+<body>
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+<section>
+  <div></div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

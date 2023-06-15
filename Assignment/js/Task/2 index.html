@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="../SPA/assests/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="display">Hello There How Are You.?</h1>
+<input id="txtOne" name="txtContent" type="text" placeholder="Input Something You Like" class="form-control w-25">
+<button id="btn1" class="btn btn-danger mt-1">Change Text</button>
+
+<h1 id="color" class="mt-5">Change My Colors</h1>
+
+<img src="https://ijse.lk/images/logos/ijse.png" class="w-25 mt-5" alt="My Image">
+<input type="text" placeholder="" class="form-control w-25">
+<button id="btn2" class="btn btn-danger mt-1 mb-5">Set Image</button>
+
+<input type="text" placeholder="Add Task" class="form-control w-25">
+<button id="btn3" class="btn btn-danger mt-1">Set Task</button>
+<ol>
+    <li>Task One</li>
+</ol>
+
+<script>
+    //how to select elements from the DOM
+    // document -> access the DOM object
+    document.getElementById("btn1"); // Select single element
+    document.getElementsByName("txtContent"); // Can select an item using an element name attribute // NodeList
+    document.getElementsByClassName("btn"); // can select an element using a class name // HTMLCollection(3)
+    document.getElementsByTagName("h1"); // can select an element using an element name// HTMLCollection(2)
+    document.querySelector("h1");// can use this one to select DOM elements using CSS selectors
+
+
+    // select h1 and get its text
+    document.querySelector('.display').innerText;
+
+    //select input field and get its text
+    document.getElementById("txtOne").value;
+
+    //select input filed and change its text
+    document.getElementById("txtOne").value="GDSE";
+
+    // Task One
+    //select the btn and bind an event
+    document.getElementById("btn1").addEventListener("click",function(){
+        document.querySelector('.display').innerText= document.getElementById("txtOne").value;
+    });
+
+
+
+    //second task
+    let globCount=1; //global variable
+
+    document.getElementById("color").addEventListener("click",function (){
+        //if this h1 is clicked for the first time
+        if (globCount==1){
+            document.getElementById("color").style.color="red";
+            globCount++;
+        }else{
+            //if the h1 is clicked for the second time
+            document.getElementById("color").style.color="green";
+            globCount=1;
+        }
+    });
+
+
+
+
+</script>
+</body>
+</html>

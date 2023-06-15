@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events in JS</title>
+    <style>
+        h1{
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+<body>
+<h1 id="content">Institute of Java and Software Engineering</h1>
+
+<script src="../SPA/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    let h1Content = $("#content").text();
+    let count = 0;
+
+    setInterval(animateText, 50);
+
+    function animateText() {
+        let content = h1Content.substring(0, count);
+        $("#content").text(content);
+        count++;
+        if (count == h1Content.length) {
+            count = 0;
+        }
+    }
+
+
+    let h1 = document.getElementById("content");
+    let timerID;
+
+    //Events and Event Data
+    window.addEventListener("mousemove", function (eData) {
+        h1.style.opacity = '1';// display the h1
+
+        // print the mouse location
+        console.log("Mouse is moving", eData.pageX, eData.pageY);
+        h1.style.position = 'relative';
+        h1.style.left = eData.pageX + "px"; // set mouse location to h1
+        h1.style.top = eData.pageY + "px";
+
+        //wait some time and then fade out the h1
+        // clear the previous timer before creating a new one
+        clearTimeout(timerID);
+        // create a timer to wait 4000ms and then fade out the h1
+        timerID = setTimeout(function () {
+            h1.style.opacity = '0';// set the opacity to 0 and hide the element
+        }, 4000);
+
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Show Using CSS</title>
+    <link rel="stylesheet" href="../../../assets/css/normalize.css">
+    <style>
+        main {
+            width: 800px;
+            height: 400px;
+            border: 2px solid black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main > section {
+            width: calc(100% * 5);
+            height: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        main > section > div {
+            height: 100%;
+            flex-grow: 1;
+        }
+
+        main > section > div:nth-child(1) {
+            background: url("../../../assets/img/1234.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(2) {
+            background: url("../../../assets/img/aq.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(3) {
+            background: url("../../../assets/img/ax.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(4) {
+            background: url("../../../assets/img/civ.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(5) {
+            background: url("../../../assets/img/chr.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slider {
+            0%,15% {
+                transform: translateX(calc((-100%/5)*0));
+            }
+            20%,35% {
+                transform: translateX(calc((-100%/5)*1));
+            }
+            40%,55% {
+                transform: translateX(calc((-100%/5)*2));
+            }
+            60%,75% {
+                transform: translateX(calc((-100%/5)*3));
+            }
+            80%,100% {
+                transform: translateX(calc((-100%/5)*4));
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--main box-->
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

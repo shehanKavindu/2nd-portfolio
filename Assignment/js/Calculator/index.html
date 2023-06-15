@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+</head>
+
+<style>
+      body {
+            background-image: url("assets/img/img.png");
+            
+        }
+
+        div {
+            background-color:blue;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        div:hover {
+            background-color: lightskyblue;
+        }
+
+        section:first-of-type {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:first-of-type > input {
+            height: 100px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            text-align: right;
+            font-size: 50px;
+        }
+
+        section:first-of-type > input::placeholder {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body class="container">
+
+<main class="row justify-content-center ">
+
+    <section class="col-12 justify-content-center">
+        <div id="btnClear" class="col-1 m-1">C</div>
+        <input id="txtInput" type="text" class="col-10" placeholder="0" disabled>
+    </section>
+    <section class="row col-12  justify-content-center">
+        <div id="num7" class="col-3 m-1">7</div>
+        <div id="num8" class="col-3 m-1">8</div>
+        <div id="num9" class="col-3 m-1">9</div>
+        <div id="numPlus" class="col-2 m-1">+</div>
+    </section>
+
+    <section class="row col-12 justify-content-center">
+        <div id="num4" class="col-3 m-1">4</div>
+        <div id="num5" class="col-3 m-1">5</div>
+        <div id="num6" class="col-3 m-1">6</div>
+        <div id="numMin" class="col-2 m-1">-</div>
+    </section>
+    <section class="row col-12 justify-content-center">
+        <div id="num1" class="col-3 m-1">1</div>
+        <div id="num2" class="col-3 m-1">2</div>
+        <div id="num3" class="col-3 m-1">3</div>
+        <div id="numDiv" class="col-2 m-1">/</div>
+    </section>
+    <section class="row col-12 justify-content-center">
+        <div id="num0" class="col-3 m-1">0</div>
+        <div id="numDot" class="col-3 m-1">.</div>
+        <div id="numEq" class="col-3 m-1">=</div>
+        <div id="numMul" class="col-2 m-1">*</div>
+    </section>
+</main>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/controller.js"></script>
+
+
+</body>
+</html>
+</style>
+
+
+</body>
+</html>

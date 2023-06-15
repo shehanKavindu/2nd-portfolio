@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../SPA/js/jquery-3.6.1.min.js"></script>
+  <script>
+    
+    
+$(document).ready(function(){
+  $("#start").click(function(){
+    $("div").animate({height: 400}, 4000);
+    $("div").animate({width: 400}, 4000);
+  });
+  $("#stop").click(function(){
+    $("div").stop();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>
+  <button id="start">Start Animation</button>
+  <button id="stop">Stop Current Animation</button>
+</p>
+
+<div style="background:blueviolet;height:200px;width:200px"></div>
+
+</body>
+</html>

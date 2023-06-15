@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+<h1>Functions in JS</h1>
+<h2>We can use functions to structure the code and can use to apply the reusability of the code</h2>
+
+<script>
+
+    //js functions or methods
+    // calculate(); // invoking a function
+    //
+    // //you can invoke a function anywhere in the
+    // //script because js supports for function
+    // //hoisting
+    // //Declare a function in js
+    // function calculate(){
+    //     console.log("Calculate Method Invoked")
+    // }
+    //
+    // calculate();// invoke a function
+
+
+    //how to send parameters for methods
+    // function printMyDetails(name,address){
+    //     console.log(name,address);
+    // }
+    // printMyDetails("Iman","Galle");
+
+
+    //what about method overloading
+    function testMethod(id){
+        console.log("Test Method One Invoked")
+    }
+
+    function testMethod(){
+        console.log(arguments);//in js function we have a arguments array
+        //this array stores all the information about method parameters
+        console.log("Test method Two Invoked")
+    }
+
+    testMethod("C001");//not working
+    //should invoke method one but invoke the second one
+    //in js method overloading is not working
+    //if there are two methods it will execute the last one
+
+
+
+
+
+
+</script>
+</body>
+</html>

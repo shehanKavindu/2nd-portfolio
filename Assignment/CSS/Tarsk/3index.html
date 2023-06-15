@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+
+  <style>
+    section{
+      height: 600px;
+      position: relative;
+      display: flex;
+      border: 1px solid black;
+    }
+
+    section>div{
+      flex-grow: 1;
+      height: 200px;
+      border: 1px solid red;
+      background: black;
+    }
+
+
+    section>:nth-child(1) {
+      align-self: flex-start;
+
+    }
+    section>:nth-child(2){
+      align-self: center;
+
+    }
+    section>:nth-child(3){
+      align-self: flex-end;
+
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

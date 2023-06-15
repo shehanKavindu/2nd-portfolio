@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM manipulation part Two</title>
+    <link href="../SPA/assests/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #loader {
+            height: 100px;
+            background: url("img/image.gif ");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <script src="js.js"></script>
+</head>
+<body>
+
+
+<div class="row mt-5">
+    <div class="col-1">
+        <h1 id="h1">01</h1>
+    </div>
+    <div class="col-2" id="loader">
+
+    </div>
+</div>
+<button class="btn btn-danger" id="btn">Start</button>
+
+<const startButton = document.getElementById("btn1");
+       const loader = document.getElementById("loader");
+       const countdown = document.getElementById("countdown");
+       startButton.addEventListener("click", fuction () {
+loader.style.display = "block";
+loaderInterval = setInterval(function () {
+loader.style.display = "none";
+}, 2000);
+startCountdown();
+});
+let interval;
+function startCountdown() {
+let count = 0;
+countdown.textContent = count;
+interval = setInterval(function () {
+count++;
+countdown.textContent = count;
+if (count === 100) {
+stopCountdown();
+}
+}, 2001);
+//   setInterval(function () {
+//     console.log("Heloozzz");
+//   }, 60);
+}
+function stopCountdown() {
+clearInterval(interval);
+}
+
+
+
+</script>
+
+</body>
+</html>

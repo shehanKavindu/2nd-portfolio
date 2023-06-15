@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Data Types</title>
+</head>
+<body>
+<h1>JS Data Types</h1>
+<p>What are the data types.?</p>
+<p>Data types are types which we can use to
+    assign different types of data</p>
+<br>
+<h3>So in JS we Have 9 data types</h3>
+<ul>
+    <li>Primitive Data Types
+        <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Undefined</li>
+            <li>Symbol</li>
+            <li>BigInt</li>
+        </ul>
+    </li>
+    <li>Structural Data Types
+        <ul>
+            <li>Objects</li>
+            <li>Function</li>
+        </ul>
+    </li>
+    <li>Structural Root Primitive
+        <ul>
+            <li>Null</li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+
+    //Data types
+
+    //Primitive DataTyped
+    //01.String
+    //02.Number
+    //03.Boolean
+    //04.Undefined
+    //05.Symbol
+    //06.BigInt
+
+    //Structural Primitive
+    //07.Object
+    //08.Function
+
+    //Root Structural Primitive
+    //09.Null
+
+
+    // 01.String
+    //There are three ways of assigning string values
+    // let name = "Iman DOI";
+    // let age = '100';
+
+    //special with js (String literals)
+    // let address = `
+    // No 123  A/9
+    // ${name}
+    // IJSE
+    // Panadura
+    // `;
+
+
+    // String related methods
+    // let string = "   Institute of Software Engineering    ";
+
+    // let a=string.toUpperCase();
+    // console.log(a);
+    //
+    // let b=string.toLowerCase();
+    // console.log(b);
+
+    //remove all the white spaces on both sides of the string
+    // console.log(string.length);
+    // let c = string.trim();
+    // console.log(c);
+    // console.log(c.length);
+
+
+    // console.log(string.length);
+    // let d=string.trimLeft();//remove the white spaces of the string only from left side
+    // console.log(d);
+    // console.log(d.length);
+
+
+    // console.log(string.length);
+    // let e=string.trimRight(); // if you wanted to remove the white spaces from a string
+    // //from the right side you can use this
+    // console.log(e);
+    // console.log(e.length);
+
+
+    //return the character of the String
+    // string.charAt(3); // I
+
+    //this will return the Char Code of the String
+    //  string.charCodeAt(3); // I = 73
+
+
+    // string.indexOf("I");
+    // return the first index number of the character
+    //if there is no string it will return -1
+
+    // string.substring(0,10);
+    //can select a range of string between two index numbers
+
+    // string.split(",");// returns an array
+    //will separator and return an array of values using the given separator
+
+
+
+    //02.Numbers
+    let decimal=20;
+    console.log(typeof decimal);//number
+
+    let binaryNumber=0b101;
+    console.log(typeof binaryNumber); //number
+
+    let ocatalNumber=0o17;
+    console.log(typeof ocatalNumber);//number
+
+    let hexaDecimal=0xA;
+    console.log(typeof hexaDecimal);//number
+
+    let floatingPoint=20.34;
+    console.log(typeof floatingPoint);//number
+
+
+    // but if you exceeded the value which you can use
+    //under number type
+    // Number.MAX_SAFE_INTEGER (9,007,199,254,740,991);
+
+    // then there is a new type called BigInt which was introduced to JS later
+
+    //How to create a BigInt data type value
+    let bigInt=100n;
+    console.log(typeof bigInt); //bigint
+
+
+
+    //03.Boolean
+    let married=true;
+    let haveAGF=false;
+
+    //04.Undefined
+    //JS is a loose-type language
+    //so there is no type for variables
+    //type is defined by the value which we
+    //assigned, so if there is no value
+    //there should be a type for identifiers
+    //So that is where undefined is used
+
+
+
+    //05.Symbol
+    //
+
+    //06.BigInt
+
+
+    //07.Objects
+    // let name="Ushan";
+    // let age =20;
+    // let married=true;
+    //
+    // var details=["Ushan",20,true];
+
+    //here we can use an object to store values
+    //as a single unit in more simple way
+
+    //we can use objects
+    //Objects are named value containers in JS
+    //literal-base
+    let customer={
+        name:"Ushan",
+        age:20,
+        married:true
+    }
+
+    //there are two ways of accessing values of an object
+    //dot notation
+    customer.name;
+    customer.age;
+    customer.married;
+
+
+    //bracket notation
+    customer['name'];
+
+
+
+    //can we change values of the object
+    customer.id="C002"; //yes
+
+    //can we add a new property to js object after created (Dynamically)
+    customer.address="Galle";
+    customer.address; //Galle
+    //Yes we can add a new property
+
+    //so can we delete also.?
+    delete customer.address;
+    customer.address;//undefined //yes we can delete
+
+
+    //08.Functions
+    //Discuss this externally in Case 06
+
+
+    //09. Null
+
+
+</script>
+</body>
+</html>
