@@ -119,21 +119,28 @@ span{
     font-size: 1.6rem;
 }
 
-.social-media a {
+.social-media {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    /*width: 50px;*/
+   /* height: 50px;*/
     background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
+    /*border: .2rem solid var(--main-color);*/
+    /*border-radius: 50%;*/
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 
 }
+
+
+.social-media>a  {
+    width: 50px;
+    height: 50px;
+}
+
 .social-media a:hover{
     background: var(--bg-color);
     color: var(--second-bg-color);
