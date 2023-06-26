@@ -519,3 +519,50 @@ span{
     margin-top: 2rem;
 
 }
+
+/* contact */
+
+.contact_container {
+    row-gap: 3rem;
+  }
+  .contact_information {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .contact_icon {
+    font-size: 2rem;
+    color: hsl(var(--hue-color), 69%, 61%);
+    margin-right:  0.75rem;
+  }
+  .contact_title {
+    font-size:  1.125rem;
+    font-weight: 500;
+  }
+  .contact_subtitle {
+    font-size:  0.813rem;
+    color:hsl(var(--hue-color), 8%, 65%);
+  }
+  .contact_content {
+    background-color: hsl(var(--hue-color), 70%, 96%);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+  }
+  .contact_label {
+    font-size: 0.75rem;
+    color:hsl(var(--hue-color), 8%, 15%);
+  }
+  .contact_input {
+    width: 100%;
+    background-color: hsl(var(--hue-color), 70%, 96%);
+    color: hsl(var(--hue-color), 8%, 45%);
+    font-family: var(--body-font);
+    font-size: 0.938rem;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+  }
+  
+  
+  
+  
+  
