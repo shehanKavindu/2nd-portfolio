@@ -1,408 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    
-    <title>SAP Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>KS PORTFOLIO </title>
+    <!--    <base href="localhost">-->
+    <meta name= "keywords" content= "Kavindu Shehan ">
+    <meta name= "description" content= "This is my personal web page">
+    <meta name= "auther" content= <"Shehan">
+    <meta name= "owner" content= "s.kavindu shehan">
+    <meta name= "robots" content= "index">
+    <meta name= "theme-color" content= "#0AD9F5">
+    <meta name= "viewport" content= "width=device-width initial-scale=1.0">
+    <link rel="icon" href= "Kavindu Shehan">
+
+    <!--    box icons-->
+    <link href= 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel= 'stylesheet'>
+
+    <!--    custom css-->
+    <link rel= "stylesheet" type= "text/css" href= "assets/css/style.css">
+    <link rel= "stylesheet" href= "assets/css/normalize.css">
+
+    <!--    fonts-->
+    <link href= "https://fonts.googleapis.com/css2?family=IM+Fell+English&family=M+PLUS+Code+Latin:wght@300;400&display=swap" rel="stylesheet">
+    <link href= "https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel= "stylesheet">
+    <link rel= "preconnect" href="https://fonts.googleapis.com">
+    <link rel= "preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href= "https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel= "stylesheet">
+
 
 </head>
+
 <body>
-  <!--  heder design -->
-  <header class="header">
-    <a href="#" class="logo">Portfolio</a>
+
+<!--*****************************   fixed message   **********************-->
+
+<div class="message"></div>
+<div class="fixedMessage">
+    <a href="#Contact">
+        <i class='bx bxs-message'>
+        </i>
+    </a>
+</div>
+
+
+<!--  ******************************      navigation bar       ***************************************-->
+
+
+<header class="header">
+
+    <a href= "#" class="logo">KAVIN<span>DU</span></a>
+    <i class= 'bx bx-menu' id= "menu-icon"></i>
+
     <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#Services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#assignment">Assignment</a>
-        <a href="#contact">Contact</a>
-          
+        <li><a href="#Home" class="active">Home</a></li>
+        <li><a href="#About" >About</a></li>
+        <li><a href="#Skills" >Skills</a></li>
+        <li><a href="#Achivement" >Achivement</a></li>
+        <li><a href="#Services" >Services</a></li>
+        <li><a href="#Projects" >Projects</a></li>
+        <li><a href="#Contact" >Contact</a></li>
     </nav>
-  </header>
-    <!--home section design-->
-    <section class="home" id="home">
-        <div class="home-content">
-        <h3>Hello,It is Me </h3>
-        <h1>Kavindu Shehan</h1>
-        <h3>And I 'am a <span class="multiple-text"></span></h3>
-        <p> 
+
+</header>
+
+<!--  *******************************      Home page       ******************************************-->
+
+<section class="home" id="Home">
+    <div class="home-content">
+        <h3>Hello,It's Me</h3>
+        <h1 class="name">Kavindu <span>Shehan.</span></h1>
+        <!--                <h2>I'm a <span class="text-animation">developer</span></h2>-->
+        <div class="container">
+            <span class="text first-text">I'm a</span>
+            <span class="text sec-text">developer</span>
+        </div>
+
+        <div class="social_media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <a href="#" class="btn">Download Cv</a>
+    </div>
+
+    <div class="home-img">
+        <img src="assets/img/img.png">
+
+    </div>
+
+</section>
+
+<!-*****************************************    about me       **************************************************-->
+
+
+<section class="about" id="About">
+    <h2 class="heading">About<span> Me</span></h2>
+    <div class="about-img">
+        <img src="assets/img/img_2.png" alt="About me photo">
+        <span class="circle-spin"></span>
+    </div>
+    <div class="about-content">
+        <h1>WHO I' <span>am</span></h1>
+        <p> I’am
             kavindu Shehan Sayakkara
             Student,Developer,Designer and photographer.
             My Hobbyes are playing cricket,photo editor,
             reading novels and playing video Games . . .
-            
             I completed Graduate Diploma in Software Engineering ( GDSE ) at
-            Institute of Java and 
-              Software Engineering ( IJSE ).
-             
-            I am currently lives in Tangalle,Sri Lanka
-        </p>
-
-       <div class="social-media">
-       <a href="https://github.com/shehanKavindu"><i class="fa-brands fa-github"></i></a>
-       <a href="https://stackoverflow.com/?newreg=f4092c95df714105b1febda251530737"><i class="fa-brands fa-stack-overflow"></i></a>
-       <a href="https://stackoverflow.com/?newreg=f4092c95df714105b1febda251530737"><i class="fa-brands fa-linkedin"></i></a>
-       <a href="https://www.facebook.com/profile.php?id=100077026892529&mibextid=ZbWKwL" ><i class="fa-brands fa-facebook" ></i></a>
-       </div>
-       <a download="" href="assets/cv.pdf" class="btn">Download CV</a>
+            Institute of Java and Software Engineering ( IJSE ).
+            I am currently lives in Tangalle,Sri Lanka</p>
+        <a href="pages/education.html" target="_blank" class="btn">read more</a>
     </div>
 
-   <div class="home-img">
-    <img src="assets/img/img.png" alt="logo" width="600">
+</section>
 
 
+<!-- *****************************************************skill************************************************** -->
+
+<section class="skills" id="Skills">
+    <div class="heading">
+        <h2>My <span>Skills</span> </h2>
     </div>
-    </section>
-   <!--about section design-->
-     <section class="about" id="about">
-        <div class="about-img">
-            <img src="assets/img/img_1.png" alt="logo">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About<span>Me</span></h2>
-            <h3>Software Engineer & Web Developer</h3>
-            <p>I’am
-                kavindu Shehan Sayakkara
-                Student,Developer,Designer and photographer.
-                My Hobbyes are playing cricket,photo editor,
-                reading novels and playing video Games . . .
-                I completed Graduate Diploma in Software Engineering ( GDSE ) at
-                Institute of Java and Software Engineering ( IJSE ).
-                I am currently lives in Tangalle,Sri Lanka</p>
-                <a href="google.com" class="btn">Read More</a>
-        </div>
-     </section>
 
-     <!--services section design-->
-     
-     <section class="services" id="Services">
-        <h2  class="heading">Our <span>Services</span></h2>
+    <div class="content">
 
-        <div class="services-container">
-            <div class="services-box">
-            <i class ='bx bx-code-alt'></i>
-            <h3>Web Developer</h3>
-            <p>What is web development? A web developer's job is to create websites.
-                 While their primary role is to ensure the website is visually appealing and easy to navigate, 
-                 many web developers are also responsible for the website's performance and capacity.</p>
-                <a href="https://www.google.com/search?q=web+design+software&oq=web+design&aqs=chrome.1.69i57j0i20i263i512j0i512l8.4347j0j4&sourceid=chrome&ie=UTF-8" class="btn">Read More</a>
-
-            </div>
-
-            <div class="services-box">
-                <i class ='bx bx-code-alt'></i>
-                <h3>Software Developer</h3>
-                <p>What does a software developer do? Software developers are the creative force behind computer programs of all kinds.
-                     They design and write the code used to build everything from operating systems to apps to video games.</p>
-                    <a href="https://www.computerscience.org/careers/software-developer/" class="btn">Read More</a>   
+        <div class="skill_box1 skill_box">
+            <div class="skill_title">
+                <div class="img">
+                    <img src="assets/img/java.png" class="skill_icon">
                 </div>
-
-                <div class="services-box">
-                    <i class ='bx bx-code-alt'></i>
-                    <h3>Graphic Developer</h3>
-                    <p>create visual concepts, using computer software or by hand, to communicate ideas that inspire, inform, and captivate consumers.
-                         They develop the overall layout and production design for applications such as advertisements, brochures, magazines, and reports.</p>
-                        <a href="https://www.coursera.org/articles/what-does-a-graphic-designer-do" class="btn">Read More</a>
-
-         </div>
-        </div>
-     </section>
-
-
-    <!--assignment section design-->
-    <section class="Assignment" id="assignment">
-      <h2 class="heading" id="Assignment" >Latest<span>Assignment</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-        <i class ='bx bx-code-alt'></i>
-        <h3>Web Site Sample</h3>
-        <p>What is Web Site Sample? A Web Site Sample create websites.
-             While their primary role is to ensure the website is visually appealing and easy to navigate, 
-             many web developers are also responsible for the website's performance and capacity.</p>
-            <a href="Assignment/CSS/Case2/index.html" class="btn">Open</a>
-           </div>
-           
-           <div class="services-container">
-            <div class="services-box">
-            <i class ='bx bx-code-alt'></i>
-            <h3>Sticky Card</h3>
-            <p>What is Sticky Card? A Sticky Card is to create websites.
-                 While their primary role is to ensure the website is visually appealing and easy to navigate, 
-                 many web developers are also responsible for the website's performance and capacity.</p>
-                <a href="Assignment/CSS/Case4/index.html" class="btn">Open</a>
-               </div>
-           
-               <div class="services-container">
-                <div class="services-box">
-                <i class ='bx bx-code-alt'></i>
-                <h3>Fixed Circle</h3>
-                <p>What is Fixed Cyrcle? Fixed cyrcle is to create websites.
-                     While their primary role is to ensure the website is visually appealing and easy to navigate, 
-                     many web developers are also responsible for the website's performance and capacity.</p>
-                    <a href="Assignment/CSS/Case3/index.html" class="btn">Open</a>
-                   </div>
-                 
-                   <div class="services-container">
-                    <div class="services-box">
-                    <i class ='bx bx-code-alt'></i>
-                    <h3>Water Drop Animation</h3>
-                    <p>What is Water Drop Animation? Water Drop Animation is to create websites.
-                         While their primary role is to ensure the website is visually appealing and easy to navigate, 
-                         many web developers are also responsible for the website's performance and capacity.</p>
-                        <a href="Assignment/CSS/Transition/Case4/index.html" class="btn">Open</a>
-                       </div>
-                       <div class="services-container">
-                        <div class="services-box">
-                            <i class ='bx bx-code-alt'></i>
-                            <h3>Images Slider</h3>
-                            <p>What is Images Slider? Images Slider is to create websites.
-                                While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                many web developers are also responsible for the website's performance and capacity.</p>
-                            <a href="Assignment/CSS/Transition/Case%205" class="btn">Open</a>
-                        </div>
-                        <div class="services-container">
-                            <div class="services-box">
-                                <i class ='bx bx-code-alt'></i>
-                                <h3>Cyrcle Transition</h3>
-                                <p>What is Cyrcle Transition? Cyrcle Transition is to create websites.
-                                    While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                    many web developers are also responsible for the website's performance and capacity.</p>
-                                <a href="Assignment/CSS/Transition/Case2" class="btn">Open</a>
-                            </div>
-
-                            <div class="services-container">
-                                <div class="services-box">
-                                    <i class ='bx bx-code-alt'></i>
-                                    <h3>Squre Transition</h3>
-                                    <p>What is Squre Transition? Squre Transition is to create websites.
-                                        While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                        many web developers are also responsible for the website's performance and capacity.</p>
-                                    <a href="Assignment/CSS/Transition/Case3" class="btn">Open</a>
-                                </div>
-
-
-                                <div class="services-container">
-                                    <div class="services-box">
-                                        <i class ='bx bx-code-alt'></i>
-                                        <h3>Car Animation</h3>
-                                        <p>What is Car Animation? Car Animation is to create websites.
-                                            While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                            many web developers are also responsible for the website's performance and capacity.</p>
-                                        <a href="Assignment/CSS/Transition/Case6" class="btn">Open</a>
-                                    </div>
-
-                                    <div class="services-container">
-                                        <div class="services-box">
-                                            <i class ='bx bx-code-alt'></i>
-                                            <h3>P O S</h3>
-                                            <p>What is P O S ? P O S is to create websites.
-                                                While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                                many web developers are also responsible for the website's performance and capacity.</p>
-                                            <a href="Assignment/CSSFrameWork/POS/index.html" class="btn">Open</a>
-                                        </div>
-
-                                        <div class="services-container">
-                                            <div class="services-box">
-                                                <i class ='bx bx-code-alt'></i>
-                                                <h3>Calculator</h3>
-                                                <p>What is Calculator? Calculator is to create websites.
-                                                    While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                                    many web developers are also responsible for the website's performance and capacity.</p>
-                                                <a href="Assignment/js/Calculator/index.html" class="btn">Open</a>
-                                            </div>
-
-                                            <div class="services-container">
-                                                <div class="services-box">
-                                                    <i class ='bx bx-code-alt'></i>
-                                                    <h3>S P A</h3>
-                                                    <p>What is S P A? S P A is to create websites.
-                                                        While their primary role is to ensure the website is visually appealing and easy to navigate,
-                                                        many web developers are also responsible for the website's performance and capacity.</p>
-                                                    <a href="Assignment/js/SPA/index.html" class="btn">Open</a>
-                                                </div>
-
-
-                                        </div>
-
-    
-
-
-           </div>
-           </div>
-          </section>        
-     
-   
-     <!--portfolio section design-->
-     <section class="Portfolio" id="Portfolios">
-       <h2 class="heading" id="Portfolio" >Latest<span>project</span></h2>
-
-        <div class="Portfolio-container">
-       <div class="Portfolio-box">
-       <img src="assets/img/blue.jpg" alt="photo" height="400px" width="400px">
-       <div class="Portfolio-layer">
-        <h4>Blue Ocan Project</h4>
-        <p>This project is in the elite tourist city Tangalle at No 30,
-            Hotel Road,has 09 Residential Floors,
-             comprising 54 apartment units and 03 levels car park.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-       </div>
-       </div>
-          
-       <div class="Portfolio-box">
-        <img src="assets/img/chat app.jpg" alt="photo" height="400px" width="400px">
-        <div class="Portfolio-layer">
-         <h4>Socket Chap Application</h4>
-         <p>A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time.
-             With a web or mobile chat ...</p>
-             <a href="https://github.com/shehanKavindu/Chat-Application"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-        </div>
+                <h3>Java</h3>
+            </div>
+            <p>Java is a versatile, object-oriented programming language known for its platform independence, robustness, security, and high performance. It enables scalable, multithreaded applications and offers extensive community support for diverse development needs.</p>
         </div>
 
-        <div class="Portfolio-box">
-            <img src="assets/img/hostel.jpg" alt="photo" width="400px" height="400px">
-            <div class="Portfolio-layer">
-             <h4>Hostel Management System</h4>
-             <p>Hostel management system is designed to manage all hostel activities like hostel
-                 admissions, fees, room, mess allotment, 
-                 hostel stores & generates related reports for smooth transactions.</p>
-                 <a href="https://github.com/shehanKavindu/Hostel-Management-System"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+        <div class="skill_box2 skill_box">
+            <div class="skill_title">
+                <div class="img">
+                    <img src="assets/img/5847f5bdcef1014c0b5e489c.png"  class="skill_icon">
+                </div>
+                <h3>HTML</h3>
             </div>
-            </div>
-
-            
-        <div class="Portfolio-box">
-            <img src="assets/img/garment.png" alt="photo" height="400px" width="400px">
-
-            <div class="Portfolio-layer">
-             <h4>Garment Project System</h4>
-             <p>a combination of production processes, materials handling, personnel and equipment 
-                that direct workflow and produce finished garments</p>
-                 <a href="https://github.com/shehanKavindu/Garment-Management-System"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-            </div>
-            </div>
-            
-
-       </div>
-       </div>
-     </section>
-
-
-     <!---contact me--->
-    <section class="contact section" id="contact">
-      <h2 class="heading" id="portfolio" >Contact<span> Me.</span></h2>
-        <span class="section_subtitle">Get in touch</span>
-        <div class="contact_container container grid">
-          <div>
-            <div class="contact_information">
-              <i class="uil uil-phone contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Call Me.</h3>
-                <span class="container_subtitle">+(94)702423470</span>
-              </div>
-            </div>
-            <div class="contact_information">
-              <i class="uil uil-envelope contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Email</h3>
-                <span class="container_subtitle">kavindushehansayakkara@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact_information">
-              <i class="uil uil-map-marker contact_icon"></i>
-              <div>
-                <h3 class="contact_title">Location</h3>
-                <span class="container_subtitle">Tangalle, SriLanka.</span>
-              </div>
-            </div>
-          </div>
-          <form action="" class="contact_form grid">
-            <div class="contact_inputs grid">
-              <div class="contact_content">
-                <label for="" class="contact_label">Name</label>
-                <input type="text" class="contact_input" />
-              </div>
-              <div class="contact_content">
-                <label for="" class="contact_label">Email</label>
-                <input type="email" class="contact_input" />
-              </div>
-            </div>
-            <div class="contact_content">
-              <label for="" class="contact_label">Project</label>
-              <input type="text" class="contact_input" />
-            </div>
-            <div class="contact_content">
-              <label for="" class="contact_label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols=""
-                rows="7"
-                class="contact_input"></textarea>
-            </div>
-            <div>
-              <a href="#" class="button button--flex btn">
-                Send Message.
-                <i class="uil uil-message button_icon"></i>
-              </a>
-            </div>
-          </form>
+            <p>HTML, or Hypertext Markup Language, is the foundation of the web. It allows the creation and structuring of web pages, providing a framework for content display, formatting, and interactivity.</p>
         </div>
-      </section>
-      
 
-
-     
-
-     <!-- contact section design
-     <section class="Contact" id="Contacts">
-        <h2 class="heading" id="contact">Contact<span>Me!</span></h2>
-        <form action="#" id="formInput">
-            <div class="inpit-box">
-               <input class="inputFields" type="text" placeholder="Full Name">
-               <input type="email" placeholder="Email Addres">
+        <div class="skill_box3 skill_box">
+            <div class="skill_title">
+                <div class="img">
+                    <img src="assets/img/sql-server.png" class="skill_icon">
+                </div>
+                <h3>MySql</h3>
             </div>
-
-            <div class="inpit-box">
-                <input type="Number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-             </div>
-             <textarea name="" id="" cols="" rows="" placeholder="Your Message"></textarea>
-             <input type="submit" value="Send Message" class="btn btnContact" > -->
-
-
-
-
-            
-            
-        <!-- </form> -->
-     </section>
-     <!--footer design-->
-     <footer class="footer">
-        <div class="footer-text">
-            <p>copyright &copy; 2023 by Kavidu Shehan | All-Right-Reserved</p>
+            <p>MySQL is a popular open-source relational database management system. It offers efficient storage, retrieval, and management of structured data, making it ideal for various web applications and data-driven solutions.</p>
         </div>
-        <div class="footer-iconTop">
-            <a href="#"><i class="fa-sharp fa-solid fa-up"></i></a>
+
+        <div class="skill_box4 skill_box">
+            <div class="skill_title">
+                <div class="img">
+                    <img src="assets/img/php%20(1).png"  class="skill_icon">
+                </div>
+                <h3>PHP</h3>
+            </div>
+            <p>PHP is a server-side scripting language widely used for web development. It enables dynamic content generation, database integration, and seamless integration with HTML, making it a powerful tool for creating interactive websites.</p>
         </div>
-     </footer>
 
-   <!-------scroll reveal------->
-   <script src="http://unpkg.com/scrollreveal"></script>
+        <div class="skill_box5 skill_box">
+            <div class="skill_title">
+                <div class="img">
+                    <img src="assets/img/java-script.png" class="skill_icon">
+                </div>
+                <h3>Java Script</h3>
+            </div>
+            <p>JavaScript is a versatile scripting language used for web development. It enables interactive and dynamic functionality on web pages, making them responsive and engaging for users across different devices.</p>
+        </div>
+
+        <div class="skill_box6 skill_box">
+            <div class="skill_title">
+                <div class="img">
+                    <img src="assets/img/icons8-adobe-photoshop-48.png"  class="skill_icon">
+                </div>
+                <h3>Photoshop</h3>
+            </div>
+            <p>
+                Photoshop is a professional image editing software widely used in graphic design and photography. It offers powerful tools for retouching, manipulating, and enhancing images, allowing for stunning visual creations and precise editing.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--**************************************************************gallery******************************************&ndash;&gt;-->
 
 
-   <!--typed js-->
-   <script src="http://cdn.jsdeliver.net/npm/typed.js@2.012"></script>
+<section class="Achivement" id="Achivementv">
+    <h2 class="heading"><span>Achivement</span></h2>
 
-   
-    <!--custom js-->
-    <script src="js/script.js"></script>
-   
+    <div class="gallery_content">
+
+        <div class="gallery_box">
+            <img src="assets/img/CSS%20Propertied%20-%20Copy%20(2)%20-%20Copy.jpg" class="gallery_img" width="350px" height="350px">
+        </div>
+
+        <div class="gallery_box">
+            <img src="assets/img/Algorithm%20-%20Copy%20(2)%20-%20Copy.jpg" class="gallery_img" width="360px" height="350px">
+        </div>
+
+        <div class="gallery_box">
+            <img src="assets/img/Introduction%20to%20DB%20and%20SQL%20-%20Copy%20(2).jpg" class="gallery_img" width="360px" height="350px">
+        </div>
+
+        <div class="gallery_box">
+            <img src="assets/img/React%20-%20Copy.jpg" class="gallery_img" width="360px" height="350px">
+        </div>
+
+        <div class="gallery_box">
+            <img src="assets/img/SoftwareTestingTutorial%20-%20Copy%20-%20Copy%20-%20Copy.jpg" class="gallery_img" width="360px" height="350px">
+        </div>
+
+        <div class="gallery_box">
+            <img src="assets/img/Python%20Foundations%20-%20Copy%20-%20Copy%20-%20Copy.jpg" class="gallery_img" width="360px" height="350px">
+        </div>
+    </div>
+    <div class="assignment">
+        <a href="pages/assignments.html" target="_blank" class="btn">read more</a>
+    </div>
+
+</section>
+
+
+
+
+
+<!--***********************************************services********************************************************&ndash;&gt;-->
+
+<section class="services" id="Services">
+    <h2 class="heading">Our <span>Services</span></h2>
+
+    <div class="services_content">
+        <div class="services_box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p> Develop any kind of web application either to conduct your business activities or to promote your business.</p>
+        </div>
+
+        <div class="services_box">
+            <i class='bx bxs-paint'></i>
+            <h3>Graphic Design</h3>
+            <p>I specialize in creating visually compelling designs that effectively communicate messages and leave a lasting impact.</p>
+        </div>
+
+        <div class="services_box">
+            <i class='bx bx-laptop'></i>
+            <h3>Desktop Apps</h3>
+            <p> Create complex desktop/enterprise software, ensure reliable software interrogation, modernise your legacy system.</p>
+        </div>
+    </div>
+</section>
+
+<!--****************************************************projects********************************************************&ndash;&gt;-->
+
+<section class="projects" id="Projects">
+    <h2 class="heading">Latest <span> Projects</span></h2>
+    <div class="project_content">
+        <div class="project_box">
+            <img src="assets/img/img_5.png"width="350px" height="300px">
+            <div class="project_layer">
+                <h4>2D Car Game</h4>
+                <p>This software developed as a solution for problems arising in car sale. it is build in java language and MVC design patten</p>
+                <a href="#"> <i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="project_box">
+            <img src="assets/img/img_7.png"width="350px" height="300px">
+            <div class="project_layer">
+                <h4>Garment Project System</h4>
+                <p>This is a simple connect-3 matching game. Move each bubble one at a time to clear groups of 3 or more of the same color.it is build in java language</p>
+                <a href="#"> <i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="project_box">
+            <img src="assets/img/img_6.png"width="350px" height="300px">
+            <div class="project_layer">
+                <h4>Hostel Management System</h4>
+                <p>This software developed as a solution for problems arising in Hotel management. it is build in java language and MVC design patten</p>
+                <a href="#"> <i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="project_box">
+            <img src="assets/projects/portfolio.jpg"width=350px" height="300px">
+            <div class="project_layer">
+                <h4>Chat Application</h4>
+                <p>This is my first web page and it designed to showcase skills and leave a lasting impression. </p>
+                <a href="https://github.com/DilanPriyanandana/MyPortfolio"> <i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="assignment">
+        <a href="pages/assignments.html" target="_blank" class="btn">Assignment</a>
+    </div>
+
+</section>
+
+<!--***************************************************contact section******************************************************&ndash;&gt;-->
+
+<section class="contact" id="Contact">
+    <h2 class="heading">Contact <span> Me</span></h2>
+
+    <form action="#">
+        <div class="input_box">
+            <input type="text" placeholder="Name*">
+            <input type="email" placeholder="Email Address*">
+        </div>
+
+        <div class="input_box">
+            <input type="number" placeholder="Mobile Number*">
+            <input type="text" placeholder="Subject*">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!--****************************************footer design****************************************************************&ndash;&gt;-->
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="#Home" >Home</a></li>
+        <li><a href="#About" >About</a></li>
+        <li><a href="#Skills" >Skills</a></li>
+        <li><a href="#Gallery" >Gallery</a></li>
+        <li><a href="#Services" >Services</a></li>
+        <li><a href="#Projects" >Projects</a></li>
+        <li><a href="#Contact" >Contact</a></li>
+    </ul>
+    <p>Copyright &copy; 2023 Kavindu Shehan All Rights Reserved</p>
+
+
+</footer>
+
+<div id="loader">
+    <div></div>
+</div>
+<!--**************************************      custom js         *********************************-->
+
+<!--scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--**************************************      loader    *************************************-->
+
+
+
+<!--custom js-->
+<script src="js/javaScipt.js"></script>
+
+<script>
+    let loader = document.getElementById("loader");
+    //this is it. this will execute after the window is fully loaded
+    window.addEventListener("load", function () {
+        console.log("This message will print just after fully loading the website")
+
+        //hide the loader
+        loader.style.display = 'none';
+    });
+</script>
+
 </body>
 
-
-
+</html>
